@@ -53,6 +53,9 @@
       color: #fff;
       text-decoration: none;
       user-select: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     .card:hover {
       transform: translateY(-8px);
@@ -60,7 +63,7 @@
       background: rgba(255,255,255,0.15);
     }
     .card h3 {
-      margin-top: 0;
+      margin-top: 15px;
       margin-bottom: 10px;
       font-weight: 600;
       font-size: 1.3rem;
@@ -69,6 +72,10 @@
       font-size: 0.95rem;
       color: #ddd;
       margin: 0;
+    }
+    .card .icon {
+      font-size: 48px;
+      user-select: none;
     }
 
     footer {
@@ -90,30 +97,37 @@
 
   <div class="cards">
     <a href="current-pe.html" class="card" tabindex="0">
+      <div class="icon">⚡</div>
       <h3>Current PE</h3>
       <p>Check the latest Player Efficiency stats and rewards</p>
     </a>
     <a href="miners-merge.html" class="card" tabindex="0">
+      <div class="icon">🔗</div>
       <h3>All Miners Merge</h3>
       <p>Explore all miner merges and their benefits</p>
     </a>
     <a href="miners-list.html" class="card" tabindex="0">
+      <div class="icon">📋</div>
       <h3>All Miners List</h3>
       <p>Detailed list of all miners available in the game</p>
     </a>
     <a href="calculator.html" class="card" tabindex="0">
+      <div class="icon">🧮</div>
       <h3>Calculator</h3>
       <p>Estimate your mining power and rewards</p>
     </a>
     <a href="leaderboard.html" class="card" tabindex="0">
+      <div class="icon">🏆</div>
       <h3>Leaderboard</h3>
       <p>See who’s leading in RollerCoin</p>
     </a>
     <a href="event-history.html" class="card" tabindex="0">
+      <div class="icon">📅</div>
       <h3>Event History</h3>
       <p>Track past game events and updates</p>
     </a>
     <a href="login.html" class="card" tabindex="0">
+      <div class="icon">🔐</div>
       <h3>Login</h3>
       <p>Access your personalized guide and data</p>
     </a>
