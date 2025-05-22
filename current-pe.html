@@ -6,78 +6,87 @@
   <title>Current PE & Rewards</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #1e1e2f;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
       color: #fff;
+      margin: 0;
       padding: 20px;
     }
     h1 {
       text-align: center;
-      color: #f0db4f;
+      color: #f9ca24;
+      font-size: 2.2em;
+    }
+    .table-container {
+      overflow-x: auto;
+      margin-top: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #00000055;
     }
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 20px;
-      background-color: #2a2a40;
+      background-color: #2e2e4d;
+      border-radius: 12px;
+      overflow: hidden;
     }
     th, td {
-      padding: 10px;
-      border: 1px solid #444;
+      padding: 12px 10px;
       text-align: center;
+      border-bottom: 1px solid #444;
     }
     th {
-      background-color: #3f3f5a;
+      background-color: #3d3d5c;
+      color: #f1f1f1;
     }
     tr:nth-child(even) {
-      background-color: #32324a;
+      background-color: #38385a;
     }
     tr:hover {
-      background-color: #45456a;
+      background-color: #505078;
+    }
+    img.reward-icon {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
     }
   </style>
 </head>
 <body>
-  <h1>🎁 Current PE & Rewards Table</h1>
+  <h1>🎁 Current PE & Rewards</h1>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Level</th>
-        <th>Total Points</th>
-        <th>Points</th>
-        <th>Rewards</th>
-        <th>Multiplier</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td>1</td><td>2000</td><td>2000</td><td>0.1 RLT</td><td>RLT</td></tr>
-      <tr><td>2</td><td>8000</td><td>6000</td><td>24.89 Th/s</td><td>0.20%</td></tr>
-      <tr><td>3</td><td>21000</td><td>13000</td><td>41.37 Th/s</td><td>0.20%</td></tr>
-      <tr><td>4</td><td>44000</td><td>23000</td><td>111.00 Th/s</td><td>1.50%</td></tr>
-      <tr><td>5</td><td>89400</td><td>45400</td><td>60.00 Th/s</td><td>3.00%</td></tr>
-      <tr><td>6</td><td>153400</td><td>64000</td><td>285.29 Th/s</td><td>0.65%</td></tr>
-      <tr><td>7</td><td>240200</td><td>86800</td><td>250 RST</td><td>RST</td></tr>
-      <tr><td>8</td><td>351000</td><td>110800</td><td>100 EXP</td><td>EXP</td></tr>
-      <tr><td>9</td><td>559000</td><td>208000</td><td>285.29 Th/s</td><td>0.65%</td></tr>
-      <tr><td>10</td><td>813000</td><td>254000</td><td>185.00 Th/s</td><td>5.00%</td></tr>
-      <tr><td>11</td><td>1119000</td><td>306000</td><td>Rack Bonus</td><td>9%</td></tr>
-      <tr><td>12</td><td>1879000</td><td>760000</td><td>598.40 Th/s</td><td>0.98%</td></tr>
-      <tr><td>13</td><td>3059000</td><td>1180000</td><td>748.97 Th/s</td><td>0.98%</td></tr>
-      <tr><td>14</td><td>4499000</td><td>1440000</td><td>775.00 Th/s</td><td>3.75%</td></tr>
-      <tr><td>15</td><td>6139000</td><td>1640000</td><td>1,250.00 RST</td><td>RST</td></tr>
-      <tr><td>16</td><td>7939000</td><td>1800000</td><td>1000.00 Th/s</td><td>3.50%</td></tr>
-      <tr><td>17</td><td>9879000</td><td>1940000</td><td>3300.00 Th/s</td><td>3.00%</td></tr>
-      <tr><td>18</td><td>11959000</td><td>2080000</td><td>Rack Bonus</td><td>10%</td></tr>
-      <tr><td>19</td><td>14159000</td><td>2200000</td><td>475.00 Th/s</td><td>8.00%</td></tr>
-      <tr><td>20</td><td>16479000</td><td>2320000</td><td>2025.00 Th/s</td><td>2.25%</td></tr>
-      <tr><td>21</td><td>18919000</td><td>2440000</td><td>6500.00 Th/s</td><td>4.50%</td></tr>
-      <tr><td>22</td><td>22619000</td><td>3700000</td><td>8200.00 Th/s</td><td>6.50%</td></tr>
-      <tr><td>23</td><td>27719000</td><td>5100000</td><td>8950.00 Th/s</td><td>6.99%</td></tr>
-      <tr><td>24</td><td>34919000</td><td>7200000</td><td>9000.00 Th/s</td><td>7.50%</td></tr>
-      <tr><td>25</td><td>54919000</td><td>20000000</td><td>20000.00 Th/s</td><td>9.99%</td></tr>
-      <tr><td>26</td><td>64919000</td><td>10000000</td><td>20000.00 Th/s</td><td>9.99%</td></tr>
-    </tbody>
-  </table>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Level</th>
+          <th>Total</th>
+          <th>Points</th>
+          <th>Reward</th>
+          <th>Image</th>
+          <th>Multiplier</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td><td>2000</td><td>2000</td><td>0.1 RLT</td>
+          <td><img class="reward-icon" src="https://rollercoin.com/static/img/rlt.png" alt="RLT"></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>2</td><td>8000</td><td>6000</td><td>24.89 Th/s</td>
+          <td><img class="reward-icon" src="https://rollercoin.com/static/img/miner.png" alt="Miner"></td>
+          <td>0.20%</td>
+        </tr>
+        <tr>
+          <td>3</td><td>21000</td><td>13000</td><td>41.37 Th/s</td>
+          <td><img class="reward-icon" src="https://rollercoin.com/static/img/miner.png" alt="Miner"></td>
+          <td>0.20%</td>
+        </tr>
+        <!-- Add more rows like above -->
+        <!-- Tip: Use actual URLs of images from RollerCoin or placeholders -->
+      </tbody>
+    </table>
+  </div>
 </body>
 </html>
